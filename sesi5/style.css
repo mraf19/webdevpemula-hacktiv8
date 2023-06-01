@@ -1,0 +1,22 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 3px;
+}
+
+input {
+  margin-bottom: 10px;
+}

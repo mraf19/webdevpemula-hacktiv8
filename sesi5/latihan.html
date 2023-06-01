@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Sei 5 - Muhammad Rafli</title>
-</head>
-<body>
-    <label>Pesan</label><input type="text"><br>
-    <label>Berapa kali</label><input type="number"><br>
-    <button type="button"></button>
-    <ol></ol>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Sesi 5 - Muhammad Rafli</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <label>Text:</label><input id="text" type="text" /><br />
+      <label>Count:</label><input id="count" type="number" /><br />
+      <button id="button" type="button">Run!</button>
+    </form>
+    <ol id="list"></ol>
 
     <script>
-        // const nama_variabel= document.getElementById("nama_variabel")
-        
+      // declaring variables
+      const text = document.getElementById("text");
+      const count = document.getElementById("count");
+      const button = document.getElementById("button");
+      const list = document.getElementById("list");
 
-        function cetak(){
-            
+      // function for deleting all list child after clicking button
+      const formatChild = () => {
+        while (list.hasChildNodes()) {
+          list.removeChild(list.firstChild);
         }
+      };
+
+      //function for print list child
+      const print = () => {
+        formatChild();
+        const listChild = document.createElement("li");
+        const textChild = document.createTextNode(text.value);
+        listChild.appendChild(textChild);
+
+        const index = Number(count.value);
+
+        for (let i = 0; i < index; i++) {
+          list.appendChild(listChild.cloneNode(true));
+        }
+
+        text.value = "";
+        count.value = "";
+      };
+
+      //event listener
+      button.addEventListener("click", () => print());
     </script>
-</body>
+  </body>
 </html>
