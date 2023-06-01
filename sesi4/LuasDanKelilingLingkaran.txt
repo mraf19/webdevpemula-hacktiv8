@@ -1,0 +1,11 @@
+Menghitung Luas dan Keliling Lingkaran
+
+Input: jari-jari lingkaran (r)
+
+langkah: 
+1. Minta pengguna untuk memasukkan panjang jari-jari lingkaran (r).
+2. Hitung luas lingkaran dengan rumus L = π * r^2, dimana π (pi) merupakan konstanta dengan nilai 3.14159.
+3. Hitung keliling lingkaran dengan rumus K = 2 * π * r.
+4. Simpan nilai luas dan keliling lingkaran.
+
+hasil: Tampilkan nilai luas dan keliling lingkaran yang telah dihitung ke layar.
