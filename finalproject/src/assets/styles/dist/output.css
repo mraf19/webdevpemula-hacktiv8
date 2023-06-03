@@ -542,6 +542,18 @@ body {
   border-width: 0;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -595,6 +607,14 @@ body {
   margin-top: 150px;
 }
 
+.mb-\[20\%\] {
+  margin-bottom: 20%;
+}
+
+.mb-\[40\%\] {
+  margin-bottom: 40%;
+}
+
 .block {
   display: block;
 }
@@ -613,6 +633,22 @@ body {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .w-1\/2 {
@@ -651,6 +687,14 @@ body {
   width: 10%;
 }
 
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[150\%\] {
+  width: 150%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -683,6 +727,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -705,6 +753,10 @@ body {
 
 .gap-\[100px\] {
   gap: 100px;
+}
+
+.gap-\[30\%\] {
+  gap: 30%;
 }
 
 .self-start {
@@ -814,6 +866,21 @@ body {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
