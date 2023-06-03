@@ -6,4 +6,8 @@
   * {
     @apply font-sans;
   }
+
+  body {
+    padding-bottom: 1000px;
+  }
 }
