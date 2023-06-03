@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
+    <nav id="navbar" class="bg-gray-100 border-gray-200 dark:bg-gray-900">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -115,7 +115,7 @@
       </div>
       <div class="w-[30%]">
         <h1
-          class="text-3xl font-bold group-hover:scale-[2] transition-all ease-in-out group-hover:translate-x-48"
+          class="text-3xl font-bold lg:group-hover:scale-[2] transition-all ease-in-out lg:group-hover:translate-x-48"
         >
           Welcome to <br />My Official Website
         </h1>
@@ -129,12 +129,12 @@
     >
       <div class="group w-[35%]">
         <h3
-          class="text-5xl font-bold mb-5 transition-all ease-in-out group-hover:scale-150 group-hover:translate-x-48"
+          class="text-5xl font-bold mb-5 transition-all ease-in-out lg:group-hover:scale-150 lg:group-hover:translate-x-48"
         >
           About Me
         </h3>
         <p
-          class="text-sm font-light text-gray-500 italic transition-all ease-in-out group-hover:translate-x-16"
+          class="text-sm font-light text-gray-500 italic transition-all ease-in-out lg:group-hover:translate-x-16"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
           voluptate iste aspernatur itaque necessitatibus ipsam a ea.
@@ -204,7 +204,7 @@
         class="w-[50%] mt-[-50px] self-end flex flex-col justify-center items-center"
       >
         <img src="assets/images/junior.jpg" alt="juniorschool" />
-        <div class="text-start mt-[-50px]">
+        <div class="text-start lg:mt-[-50px]">
           <h4 class="text-2xl font-bold mb-2">Junior High School</h4>
           <p class="font-light text-sm text-gray-500 italic">2012-2015</p>
         </div>
@@ -246,35 +246,38 @@
     <!-- Interest -->
     <section
       id="interest"
-      class="group w-[75%] flex flex-row justify-stretch gap-[50px] items-center mx-auto mt-[50px]"
+      class="group w-[75%] flex flex-col justify-stretch gap-[50px] items-center mx-auto mt-[100px] pt-20"
     >
-      <div class="w-[15%] flex flex-col justify-around items-center">
-        <div class="w-[30%] mb-[40%]">
-          <img src="assets/icons/one-svgrepo-com.svg" alt="iconz" />
+      <h3 class="text-5xl font-bold">Interest</h3>
+      <div class="flex flex-row justify-stretch items-center">
+        <div class="w-[15%] flex flex-col justify-around items-center">
+          <div class="w-[30%] mb-[40%]">
+            <img src="assets/icons/number-one.png" alt="iconz" />
+          </div>
+          <div class="w-[30%] mb-[40%]">
+            <img src="assets/icons/number-2.png" alt="iconz" />
+          </div>
+          <div class="w-[30%] mb-[40%]">
+            <img src="assets/icons/number-3.png" alt="iconz" />
+          </div>
         </div>
-        <div class="w-[30%] mb-[40%]">
-          <img src="assets/icons/two-svgrepo-com.svg" alt="iconz" />
+        <div class="w-[60%]">
+          <img
+            src="assets/images/interest.jpg"
+            alt="interes"
+            class="object-cover"
+          />
         </div>
-        <div class="w-[30%] mb-[40%]">
-          <img src="assets/icons/three-svgrepo-com.svg" alt="iconz" />
-        </div>
-      </div>
-      <div class="w-[60%]">
-        <img
-          src="assets/images/interest.jpg"
-          alt="interes"
-          class="object-cover"
-        />
-      </div>
-      <div class="w-[15%] flex flex-col items-center">
-        <div class="w-[30%] mb-[40%]">
-          <img src="assets/icons/four-svgrepo-com.svg" alt="iconz" />
-        </div>
-        <div class="w-[30%] mb-[40%]">
-          <img src="assets/icons/fifty-svgrepo-com.svg" alt="iconz" />
-        </div>
-        <div class="w-[30%] mb-[40%]">
-          <img src="assets/icons/six-svgrepo-com.svg" alt="iconz" />
+        <div class="w-[15%] flex flex-col items-center">
+          <div class="w-[30%] mb-[40%]">
+            <img src="assets/icons/number-four.png" alt="iconz" />
+          </div>
+          <div class="w-[30%] mb-[40%]">
+            <img src="assets/icons/number-5.png" alt="iconz" />
+          </div>
+          <div class="w-[30%] mb-[40%]">
+            <img src="assets/icons/number-six.png" alt="iconz" />
+          </div>
         </div>
       </div>
     </section>
@@ -312,6 +315,21 @@
         </div>
       </div>
     </section>
+
+    <!-- Icon up -->
+    <div class="sticky bottom-[5%] left-[90%] w-20 h-20">
+      <a href="#navbar"
+        ><img src="assets/icons/arrow-up.svg" alt="arrow-up"
+      /></a>
+    </div>
+
+    <!-- footer -->
+    <footer class="p-2 mt-30 w-full border-t-2 border-gray-500 text-center">
+      <p class="text-sm font-light italic text-gray-600">
+        Copyright 2023 | Muhammad Rafli
+      </p>
+    </footer>
+
     <!-- script FlowBite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
